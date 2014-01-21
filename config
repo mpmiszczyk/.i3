@@ -30,11 +30,11 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec uxterm
 
-bindsym $mod+n exec emacs
+bindsym $mod+u exec emacs
 bindsym $mod+c exec chromium
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+Shift+k kill
 
 # start dmenu (a program launcher)
 # bindsym $mod+m exec dmenu_run
@@ -50,10 +50,10 @@ bindsym $mod+i exec quickswitch.py
 bindcode 160 exec i3lock -c 101000
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+b focus left
+bindsym $mod+n focus down
+bindsym $mod+p focus up
+bindsym $mod+f focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -62,10 +62,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+b move left
+bindsym $mod+Shift+n move down
+bindsym $mod+Shift+p move up
+bindsym $mod+Shift+f move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -80,11 +80,11 @@ bindsym $mod+h split h
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen
+bindsym $mod+g fullscreen
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
+bindsym $mod+y layout stacked
+bindsym $mod+t layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
@@ -129,7 +129,8 @@ bindsym $mod+Shift+g reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 # bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-bindsym $mod+Shift+c exit
+# k like kill
+bindsym $mod+Shift+q exit
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -173,7 +174,7 @@ new_window 1pixel
 
 
 # class                 border  backgr. text    indicator
-client.focused          #ff0049 #ff0049 #ffffff #2e9ef4
+client.focused          #ff0049 #ff0049 #ffffff #ff0049
 client.focused_inactive #333333 #5f676a #ffffff #484e50
 client.unfocused        #333333 #222222 #888888 #292d2e
 client.urgent           #2f343a #900000 #ffffff #900000
