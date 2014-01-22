@@ -41,10 +41,12 @@ bindsym $mod+Shift+k kill
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym $mod+m exec --no-startup-id i3-dmenu-desktop
+# just like mod-x in emcs
+bindsym $mod+x exec --no-startup-id i3-dmenu-desktop
 
-# start quckswitch 
-bindsym $mod+i exec quickswitch.py
+# start quckswitch
+# just like search
+bindsym $mod+s exec quickswitch.py
 
 #lock system
 bindcode 160 exec i3lock -c 101000
