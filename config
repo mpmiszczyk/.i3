@@ -46,7 +46,7 @@ bindsym $mod+x exec --no-startup-id i3-dmenu-desktop
 
 # start quckswitch
 # just like search
-bindsym $mod+s exec quickswitch.py
+bindsym $mod+s exec xwinmosaic
 
 #lock system
 bindcode 160 exec i3lock -c 101000
