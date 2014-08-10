@@ -49,7 +49,9 @@ bindsym $mod+x exec --no-startup-id i3-dmenu-desktop
 bindsym $mod+s exec xwinmosaic
 
 #lock system
-bindcode 160 exec i3lock -c 101000
+set $lock_color 171824
+bindcode 160 exec i3lock -c $lock_color  # lock by lenovo function key
+bindsym $mod+l exec i3lock -c $lock_color # lock by shortcut
 
 # change focus
 bindsym $mod+b focus left
