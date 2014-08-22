@@ -46,7 +46,7 @@ bindsym $mod+x exec --no-startup-id i3-dmenu-desktop
 
 # start quckswitch
 # just like search
-bindsym $mod+s exec xwinmosaic
+bindsym $mod+s exec xwinmosaic --no-colors
 
 #lock system
 set $lock_color 171824
