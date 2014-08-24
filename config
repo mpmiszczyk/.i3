@@ -190,6 +190,6 @@ client.urgent           #2f343a #900000 #ffffff #900000
 # That way I will be able to toggle inbetween outputs
 # when moving containers / displays
 
-bindsym $mod+Tab move container to output up
+bindsym $mod+Tab move container to output up; focus output up
 
-bindsym $mod+Shift+Tab move workspace to output up
+bindsym $mod+Shift+Tab move workspace to output up; focus output up
