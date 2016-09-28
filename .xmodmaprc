@@ -1,8 +1,3 @@
-clear Control
-keycode 37 = Kanji
-keycode 151 = Kanji
-add Mod4 = Kanji
-
 ! comments: this is just example and i need to set it up on manually
 ! on each computer
 
@@ -14,3 +9,7 @@ keycode 105 = Control_R
 add Control = Control_L
 add Control = Control_R
 
+
+! volume control from hardbuttons
+keycode 174 = XF86AudioLowerVolume
+keycode 176 = XF86AudioRaiseVolume
