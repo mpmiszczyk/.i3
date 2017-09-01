@@ -1,17 +1,19 @@
-Xft.autohint: 0
-Xft.lcdfilter:  lcddefault
-Xft.hintstyle:  hintslight
+Xft.dpi: 96
+Xft.autohint: 1
+Xft.hintstyle:  hintlight
 Xft.hinting: 1
 Xft.antialias: 1
-!Xft.rgba: rgb
+Xft.rgba: none
 
 xterm*termName: xterm-256color
-XTerm*locale: true
-xterm*faceName: xft:Iosevka
-xterm*faceStyle: Regular
-xterm*faceSize: 9
-xterm*renderFont: true
+xterm*locale: true
 
+! xterm*faceName: xft:Iosevka
+! xterm*faceStyle: Medium
+! xterm*facePixelSize: 10
+! xterm*renderFont: true
+
+xterm*font: xft:Iosevka:antialias=true:pixelsize=13
 
 ! make Alt-f work
 *xterm*metaSendsEscape: true
@@ -47,4 +49,4 @@ xterm*VT100.Translations: #override \
 
 
 Emacs.FontBackend: xft
-Emacs.Font : Iosevka-12
+Emacs.Font : Iosevka-10.5
