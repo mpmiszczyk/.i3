@@ -24,7 +24,8 @@ set $mod Mod4
 # chose a FreeType font, such as:
 # font pango:DejaVu Sans Mono 7
 
-font pango:Pragmata 7
+# font pango:Pragmata 7
+font pango:Iosevka 9
 # font pango:Lekton 8
 
 # force_focus_wrapping yes
