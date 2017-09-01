@@ -35,7 +35,7 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec uxterm
 
-bindsym $mod+u exec emacs
+bindsym $mod+u exec emacsclient -c
 bindsym $mod+c exec google-chrome-stable
 
 # kill focused window
