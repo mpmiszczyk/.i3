@@ -33,7 +33,10 @@ font -misc-fixed-medium-r-normal--11-120-75-75-C-70-iso10646-1
 floating_modifier $mod
 
 # Wallpaper
-exec --no-startup-id feh --bg-scale ~/wall/fire.png
+set $random-wallpaper feh --randomize --bg-scale ~/wall/*
+exec --no-startup-id $random-wallpaper
+bindsym $mod+o exec --no-startup-id $random-wallpaper
+
 
 # start a terminal
 bindsym $mod+Return exec uxterm
