@@ -10,7 +10,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 # Start redshift with i3
-# all configuration, with
+# configuration in `~/.config/redshift.conf~
 exec redshift
 
 set $mod Mod4
@@ -31,6 +31,9 @@ font -misc-fixed-medium-r-normal--11-120-75-75-C-70-iso10646-1
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
+
+# Wallpaper
+exec --no-startup-id feh --bg-scale ~/wall/fire.png
 
 # start a terminal
 bindsym $mod+Return exec uxterm
